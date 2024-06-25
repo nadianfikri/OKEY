@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Umbrella corporation</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-image: url("https://i.ibb.co/V3gBsnB/megamendung-batik-pattern-4518352-640.webp");
+            margin: 0;
+            padding: 0;
+            font-family: 'Open Sans', sans-serif;
+        }
+        form {
+            background-color: white;
+            padding: 30px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            width: 400px;
+        }
+        fieldset {
+            border: none;
+            margin: 0;
+            padding: 0;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-size: 14px;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="date"],
+        input[type="password"],
+        select {
+            width: 100%;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+            box-sizing: border-box;
+            margin-bottom: 10px;
+        }
+        textarea {
+            width: 100%;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+            box-sizing: border-box;
+            margin-bottom: 10px;
+            resize: vertical;
+        }
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            margin-top: 10px;
+        }
+        input[type="submit"]:hover {
+            background-color: transparent;
+        }
+        legend {
+            font-size: 16px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+        .parent {
+            display: grid;
+            place-items: center;
+        }
+        .button-custom {
+            background-color: transparent;
+            border-color: red;
+            color: black;
+            display: inline-block;
+            padding: 10px 20px;
+            border-radius: 5px;
+            border: thin solid black;
+            box-shadow: 1px 1px 1px black;
+            white-space: nowrap;
+            font-size: 16px;
+            font-weight: normal;
+            font-family: 'Roboto', sans-serif;
+            margin: 2rem 0;
+            width: 240px;
+            height: 50px;
+        }
+    </style>
+</head>
+<body>
+    <form action="/register" method="post">
+        <fieldset>
+            <legend>Biodata pribadi bro</legend>
+            <label for="nama">Nama:</label>
+            <input type="text" id="nama" name="nama" placeholder="">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" placeholder="">
+            <label for="Alamat">Alamat:</label>
+            <input type="text" id="Alamat" name="Alamat" placeholder="">
+            <label for="Tanggal_lahir">Hari Tanggal lahir:</label>
+            <input type="date" id="Tanggal_lahir" name="Tanggal_lahir">
+            <div style="display: flex; align-items: flex-start;">
+                <div style="flex: 1; margin-right: 10px;">
+                    <label for="jenis-kelamin">Jenis Kelamin</label>
+                    <select id="jenis-kelamin" name="jenis_kelamin">
+                        <option value="lk">Laki-laki</option>
+                        <option value="pr">Perempuan</option>
+                        <option value="rahasia" disabled>Rahasia</option>
+                    </select>
+                </div>
+                <div style="flex: 1; margin-left: 10px;">
+                    <label for="agama">Agama:</label>
+                    <select id="agama" name="agama">
+                        <option value="islam">Islam</option>
+                        <option value="kristen">Kristen</option>
+                        <option value="hindu">Hindu</option>
+                        <option value="budha">Buddha</option>
+                    </select>
+                </div>
+            </div>
+            <label for="hobi">Hobi:</label>
+            <select id="hobi" name="hobi">
+                <option value="memancing">Memancing</option>
+                <option value="berkebun">Berkebun</option>
+                <option value="membaca">Membaca</option>
+                <option value="menulis">Menulis</option>
+                <option value="bersepeda">Bersepeda</option>
+            </select>
+            </select>
+            
+   
+<label for="motivasi">Motivasi:</label>
+            
+        
+<input type="text" id="motivasi" name="motivasi" placeholder="Masukkan motivasi Anda">
+            
+   
+<div class="parent">
+            <div class="parent">
+                <button type="submit" class="button-custom">Submit</button>
+            </div>
+        </fieldset>
+    </form>
+</body>
+</html>
